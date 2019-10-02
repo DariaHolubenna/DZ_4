@@ -1,0 +1,146 @@
+div{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border: 2px;
+    border-color: gray solid;
+    display: flex;
+}
+
+.all{
+    color: aquamarine;
+    padding: 20px;
+    margin-left: 20px;
+    list-style-type: decimal;
+    font-size: 33px;
+}
+
+.OVA{
+    color: red;
+    list-style-type: disc;
+    font-family: monospace sans-serif;
+    width: 110px;
+}
+
+.OVA li:nth-child(2n+1){
+    color: orange;
+}
+
+.OVA li:first-child{
+    color: white;
+}
+
+.OVA li:last-child{
+    color: green;
+}
+
+.OVA li:nth-child(4n){
+    color: blueviolet;
+}
+
+.OVA li:hover{
+    color: aliceblue;
+}
+
+.OVA .ova1:hover{
+    color: blue;
+}
+
+/* .ova1::after{
+    content: attr(data-title);
+} */
+
+.ova1:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    background-color: cadetblue;
+    font-family: monospace sans-serif;
+    font-size: 18px;
+    color: blue;
+    border: 1px solid #333;
+    padding: 5px;
+    min-width: 10px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.ova2:hover::after{
+    content: attr(title);
+    position: absolute;
+    z-index: 1;
+    background-color: lightpink;
+    font-family: monospace sans-serif;
+    font-size: 18px;
+    color: red;
+    border: 1px solid #333;
+    padding: 5px;
+    min-width: 10px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.ova3:hover::after{
+    content: attr(title);
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    font-family: monospace sans-serif;
+    font-size: 18px;
+    color: orange;
+    border: 1px solid #333;
+    padding: 5px;
+    min-width: 10px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.ova4:hover::after{
+    content: attr(title);
+    position: absolute;
+    z-index: 1;
+    background-color: lightgreen;
+    font-family: monospace sans-serif;
+    font-size: 18px;
+    color: blueviolet;
+    border: 1px solid #333;
+    padding: 5px;
+    min-width: 10px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.ova5:hover::after{
+    content: attr(title);
+    position: absolute;
+    z-index: 1;
+    background-color: lightslategrey;
+    font-family: monospace sans-serif;
+    font-size: 18px;
+    color: green;
+    border: 1px solid #333;
+    padding: 5px;
+    min-width: 10px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.ova5:hover::before{
+    content: "\8656";
+}
+
+.ova1:hover::before{
+    content: "\8654";
+}
+
+.ova2:hover::before{
+    content: "\8624";
+}
+
+.ova3:hover::before{
+    content: "\8634";
+}
+
+.ova4:hover::before{
+    content: "\8694";
+}
